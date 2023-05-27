@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insertar Review</title>
+</head>
+<body>
+    <h1>Insertar Review</h1>
+
+    <form action="action.php" method="post">
+        <input type="hidden" name="tabla" value="reviews">
+        <input type="hidden" name="accion" value="insertar">
+
+        <label for="libro_id">ID del libro:</label>
+        <input type="text" id="libro_id" name="libro_id">
+
+        <label for="calificacion">Calificación:</label>
+        <input type="text" id="calificacion" name="calificacion">
+
+        <label for="comentario">Comentario:</label>
+        <input type="text" id="comentario" name="comentario">
+
+        <input type="submit" value="Insertar">
+    </form>
+</body>
+</html>

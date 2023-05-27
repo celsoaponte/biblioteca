@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panel de Control</title>
+</head>
+<body>
+    <h1>Panel de Control</h1>
+
+    <form action="action.php" method="post">
+        <label for="tabla">Selecciona una tabla:</label>
+        <select id="tabla" name="tabla">
+        <option value="autores">Autores</option>
+        <option value="editoriales">Editoriales</option>
+        <option value="generos">Generos</option>
+        <option value="libros">Libros</option>
+        <option value="reviews">Reviews</option>
+        </select>
+
+        <label for="accion">Selecciona una accion:</label>
+        <select id="accion" name="accion">
+            <option value="visualizar">Visualizar</option>
+            <option value="insertar">Insertar</option>
+            <option value="modificar">Modificar</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

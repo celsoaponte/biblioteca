@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insertar Libro</title>
+</head>
+<body>
+    <h1>Insertar Libro</h1>
+
+    <form action="action.php" method="post">
+        <input type="hidden" name="tabla" value="libros">
+        <input type="hidden" name="accion" value="insertar">
+
+        <label for="titulo_libro">Título del libro:</label>
+        <input type="text" id="titulo_libro" name="titulo_libro">
+
+        <label for="autor_id">ID del autor:</label>
+        <input type="text" id="autor_id" name="autor_id">
+
+        <label for="editorial_id">ID de la editorial:</label>
+        <input type="text" id="editorial_id" name="editorial_id">
+
+        <label for="genero_id">ID del género:</label>
+        <input type="text" id="genero_id" name="genero_id">
+
+        <input type="submit" value="Insertar">
+    </form>
+</body>
+</html>
