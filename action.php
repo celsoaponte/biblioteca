@@ -49,16 +49,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             break;
 
         case "modificar":
-            // Código para modificar los datos de la tabla seleccionada
-            $id = $_POST["id"];
-            $nuevo_titulo = $_POST["nuevo_titulo"];
+            // Redirigir a la página correspondiente para modificar datos
+            switch ($tabla) {
+                case "autores":
+                    header("Location: modificar_autores.html");
+                    break;
+                case "editoriales":
+                    header("Location: modificar_editoriales.html");
+                    break;
+                case "generos":
+                    header("Location: modificar_generos.html");
+                    break;
+                case "libros":
+                    header("Location: modificar_libros.html");
+                    break;
+                case "reviews":
+                    header("Location: modificar_reviews.html");
+                    break;
+                default:
+                    echo "Tabla seleccionada inválida.";
+                    break;
+            }
+            break;
 
-            $sql = "UPDATE $tabla SET titulo_libro = '$nuevo_titulo' WHERE id = '$id'";
-
-            if ($conn->query($sql) === TRUE) {
-                echo "Registro actualizado correctamente.";
-            } else {
-                echo "Error al actualizar el registro: " . $conn->error;
+        case "eliminar":
+            // Redirigir a la página correspondiente para eliminar datos
+            switch ($tabla) {
+                case "autores":
+                    header("Location: eliminar_autores.html");
+                    break;
+                case "editoriales":
+                    header("Location: eliminar_editoriales.html");
+                    break;
+                case "generos":
+                    header("Location: eliminar_generos.html");
+                    break;
+                case "libros":
+                    header("Location: eliminar_libros.html");
+                    break;
+                case "reviews":
+                    header("Location: eliminar_reviews.html");
+                    break;
+                default:
+                    echo "Tabla seleccionada inválida.";
+                    break;
             }
             break;
 

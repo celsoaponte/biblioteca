@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Autor</title>
+</head>
+<body>
+    <h1>Modificar Autor</h1>
+
+    <form action="modificar_autores.php" method="post">
+        <input type="hidden" name="tabla" value="autores">
+        <input type="hidden" name="accion" value="modificar">
+
+        <label for="id">ID del autor:</label>
+        <input type="text" id="id" name="id">
+
+        <label for="nuevo_nombre">Nuevo nombre:</label>
+        <input type="text" id="nuevo_nombre" name="nuevo_nombre">
+
+        <input type="submit" value="Modificar">
+    </form>
+</body>
+</html>
