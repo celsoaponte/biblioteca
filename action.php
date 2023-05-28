@@ -93,4 +93,7 @@ function visualizarTabla($conn, $tabla) {
         echo "No se encontraron registros en la tabla.";
     }
 }
+
+// Cerrar la conexión a la base de datos
+$conn->close();
 ?>
