@@ -11,13 +11,15 @@
 
     <form action="modificar_reviews.php" method="post">
         <label for="id">ID de la review:</label>
-        <input type="number" id="id" name="id" required>
+        <input type="number" id="id" name="id" min="1" required>
 
         <label for="nueva_calificacion">Nueva calificación:</label>
-        <input type="number" id="nueva_calificacion" name="nueva_calificacion" required>
+        <input type="number" id="nueva_calificacion" name="nueva_calificacion" min="1" max="5" required>
+        <br> <br>
 
         <label for="nuevo_comentario">Nuevo comentario:</label>
-        <input type="text" id="nuevo_comentario" name="nuevo_comentario" required>
+        <br>
+        <textarea id="nuevo_comentario" name="nuevo_comentario" required></textarea>
 
         <input type="submit" value="Modificar">
     </form>

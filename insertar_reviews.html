@@ -14,13 +14,16 @@
         <input type="hidden" name="accion" value="insertar">
 
         <label for="libro_id">ID del libro:</label>
-        <input type="text" id="libro_id" name="libro_id">
+        <input type="number" id="libro_id" name="libro_id" min="1">
 
         <label for="calificacion">Calificación:</label>
-        <input type="text" id="calificacion" name="calificacion">
+        <input type="number" id="calificacion" name="calificacion" min="1" max="5">
+        <br> <br>
 
         <label for="comentario">Comentario:</label>
-        <input type="text" id="comentario" name="comentario">
+        <br>
+        <textarea id="comentario" name="comentario"></textarea>
+        <br>
 
         <input type="submit" value="Insertar">
     </form>
