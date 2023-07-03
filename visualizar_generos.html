@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Géneros</title>
+</head>
+<body>
+    <h1>Visualizar Géneros</h1>
+
+    <form action="visualizar_generos.php" method="post">
+        <label for="columnas">Seleccionar columnas:</label><br>
+        <input type="checkbox" id="id" name="columnas[]" value="id">
+        <label for="id">ID</label><br>
+        <input type="checkbox" id="nombre_genero" name="columnas[]" value="nombre_genero">
+        <label for="nombre_genero">Nombre del Género</label><br>
+
+        <br>
+
+        <button type="submit">Mostrar</button>
+    </form>
+</body>
+</html>

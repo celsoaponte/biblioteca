@@ -17,23 +17,7 @@
 <body>
     <h1>Panel de Control</h1>
 
-    <form action="action.php" method="post">
-        <label for="tabla">Seleccionar tabla:</label>
-        <select id="tabla" name="tabla">
-            <option value="autores">Autores</option>
-            <option value="editoriales">Editoriales</option>
-            <option value="generos">Generos</option>
-            <option value="libros">Libros</option>
-            <option value="reviews">Reviews</option>
-        </select>
-
-        <div class="button-container">
-            <button type="submit" name="accion" value="visualizar">Visualizar</button>
-            <button type="submit" name="accion" value="insertar">Insertar</button>
-            <button type="submit" name="accion" value="modificar">Modificar</button>
-            <button type="submit" name="accion" value="eliminar">Eliminar</button>
-        </div>
-    </form>
+    <!-- Resto del contenido del formulario... -->
 
     <h2>Consulta compuesta</h2>
 
@@ -54,6 +38,20 @@
             <option value="generos">Generos</option>
             <option value="libros">Libros</option>
             <option value="reviews">Reviews</option>
+        </select>
+
+        <label for="columnas1">Seleccionar columnas de la tabla 1:</label>
+        <select id="columnas1" name="columnas1[]" multiple>
+            <option value="id">ID</option>
+            <option value="nombre_autor">Nombre Autor</option>
+            <!-- Agrega otras opciones de columnas para la tabla 1 aquí -->
+        </select>
+
+        <label for="columnas2">Seleccionar columnas de la tabla 2:</label>
+        <select id="columnas2" name="columnas2[]" multiple>
+            <option value="id">ID</option>
+            <option value="nombre_editorial">Nombre Editorial</option>
+            <!-- Agrega otras opciones de columnas para la tabla 2 aquí -->
         </select>
 
         <div class="button-container">

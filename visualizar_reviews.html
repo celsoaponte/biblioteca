@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Reviews</title>
+</head>
+<body>
+    <h1>Visualizar Reviews</h1>
+
+    <form action="visualizar_reviews.php" method="post">
+        <label for="columnas">Seleccionar columnas:</label><br>
+        <input type="checkbox" id="id" name="columnas[]" value="id">
+        <label for="id">ID</label><br>
+        <input type="checkbox" id="libro_id" name="columnas[]" value="libro_id">
+        <label for="libro_id">ID del Libro</label><br>
+        <input type="checkbox" id="calificacion" name="columnas[]" value="calificacion">
+        <label for="calificacion">Calificación</label><br>
+        <input type="checkbox" id="comentario" name="columnas[]" value="comentario">
+        <label for="comentario">Comentario</label><br>
+
+        <br>
+
+        <button type="submit">Mostrar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Libros</title>
+</head>
+<body>
+    <h1>Visualizar Libros</h1>
+
+    <form action="visualizar_libros.php" method="post">
+        <label for="columnas">Seleccionar columnas:</label><br>
+        <input type="checkbox" id="id" name="columnas[]" value="id">
+        <label for="id">ID</label><br>
+        <input type="checkbox" id="titulo_libro" name="columnas[]" value="titulo_libro">
+        <label for="titulo_libro">Título del Libro</label><br>
+        <input type="checkbox" id="autor_id" name="columnas[]" value="autor_id">
+        <label for="autor_id">ID del Autor</label><br>
+        <input type="checkbox" id="editorial_id" name="columnas[]" value="editorial_id">
+        <label for="editorial_id">ID de la Editorial</label><br>
+        <input type="checkbox" id="genero_id" name="columnas[]" value="genero_id">
+        <label for="genero_id">ID del Género</label><br>
+
+        <br>
+
+        <button type="submit">Mostrar</button>
+    </form>
+</body>
+</html>
